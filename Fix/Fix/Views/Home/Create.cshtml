@@ -1,0 +1,194 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="~/assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/assets/css/flex-slider.css" rel="stylesheet" />
+    <link href="~/assets/css/animate.css" rel="stylesheet" />
+    <link href="~/assets/css/owl.css" rel="stylesheet" />
+    <link href="~/assets/css/templatemo-liberty-market.css" rel="stylesheet" />
+
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+   @* <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>*@
+    <!-- ***** Preloader End ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="~/images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Home" asp-action="Explore">Explore</a></li>
+                            <li><a asp-controller="Home" asp-action="Details">Item Details</a></li>
+                            <li><a asp-controller="Home" asp-action="Author">Author</a></li>
+                            <li><a asp-controller="Home" asp-action="Create">Create Yours</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-heading normal-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h6>Liberty NFT Market</h6>
+                    <h2>Create Your NFT Now.</h2>
+                    <span>Home > <a href="#">Create Yours</a></span>
+                    <div class="buttons">
+                        <div class="main-button">
+                            <a href="explore.html">Explore Our Items</a>
+                        </div>
+                        <div class="border-button">
+                            <a href="create.html">Create Your NFT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-details-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h2>Apply For <em>Your Item</em> Here.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <form id="contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="title">Item Title</label>
+                                    <input type="title" name="title" id="title" placeholder="Ex. Lyon King" autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="description">Description For Item</label>
+                                    <input type="description" name="description" id="description" placeholder="Give us your idea" autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="username">Your Username</label>
+                                    <input type="username" name="username" id="username" placeholder="Ex. " autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <label for="price">Price Of Item</label>
+                                    <input type="price" name="price" id="price" placeholder="Price depends on quality. Ex. 0.06 ETH" autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <label for="royalities">Royalties</label>
+                                    <input type="royalities" name="royalities" id="royalities" placeholder="Common royalties 1-25%" autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="file">Your File</label>
+                                    <input type="file" id="file" name="myfiles[]" multiple />
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-8">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="orange-button">Submit Your Applying</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h2>This Is <em>Your Item</em> Preview.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="left-image">
+                        <img src="~/images/create-yours.jpg" alt="" style="border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="col-lg-5 align-self-center">
+                    <h4>Dolores Haze Westworld Eye</h4>
+                    <span class="author">
+                        <img src="~/images/author-02.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                        <h6>Kataleya Smithee<br><a href="#"></a></h6>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="bid">
+                                Current Bid<br><strong>0.06 ETH</strong><br><em>($8055,35)</em>
+                            </span>
+                        </div>
+                        <div class="col-4">
+                            <span class="owner">
+                                Owner<br><strong>Alan Smithee</strong><br><em>()</em>
+                            </span>
+                        </div>
+                        <div class="col-5">
+                            <span class="ends">
+                                Ends In<br><strong>3D 05H 20M 58S</strong><br><em>(January 22nd, 2021)</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/js/isotope.min.js"></script>
+    <script src="~/js/owl-carousel.js"></script>
+
+    <script src="~/js/tabs.js"></script>
+    <script src="~/js/popup.js"></script>
+    <script src="~/js/custom.js"></script>
+</body>
+</html>
